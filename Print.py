@@ -1,3 +1,1 @@
-print("Hello")
-print("A")
-print("World")
+print("yaron zlotolov")

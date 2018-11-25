@@ -13,7 +13,7 @@ from selenium import webdriver
 driver = webdriver.Chrome(executable_path="c:/temp/chromedriver.exe")
 
 try:
-    # Step A - registration screen
+    # Step A - registration screen new
     # Enter the web site
     driver.get("https://buyme.co.il")
     driver.maximize_window()

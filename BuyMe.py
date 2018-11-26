@@ -1,7 +1,6 @@
 # ***** BuyMe sanity text *****
 
 import time
-from PIL import Image, ImageDraw
 from selenium import webdriver
 
 driver = webdriver.Chrome(executable_path="c:/temp/chromedriver.exe")
@@ -68,13 +67,6 @@ driver.find_element_by_xpath("//textarea").clear()
 driver.find_element_by_xpath("//textarea").send_keys("Mazal Tov!")
 rcv_name[4].click()
 # Upload a picture
-# pip install Pillow
-# creating an image for the test
-img = Image.new('RGB', (120, 50), color='red')
-d = ImageDraw.Draw(img)
-d.text((30, 20), "Mazal Tov", fill=(255, 255, 0))
-img.save('c:/temp/mazaltov.jpg')
-# pip install pynput - for uploading the picture from the local drive using the the keyboard
 time.sleep(3)
 driver.find_element_by_id("ember1277").send_keys("c:\\temp\\mazaltov.jpg")
 # pick the event - birthday

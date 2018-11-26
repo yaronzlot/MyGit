@@ -65,13 +65,13 @@ rcv_name = driver.find_elements_by_class_name("ember-text-field")
 # for ii in rcv_name:
 #     print(ii.get_attribute('class'))
 rcv_name[2].clear()
-rcv_name[2].send_keys("איילת")
+rcv_name[2].send_keys("Ayelet")
 # enter sender name
 rcv_name[3].clear()
-rcv_name[3].send_keys("ירון שי עמית ואיתי")
+rcv_name[3].send_keys("Yaron Shay Amit Itay")
 # enter a blessing
 driver.find_element_by_xpath("//textarea").clear()
-driver.find_element_by_xpath("//textarea").send_keys("מזל טוב איילת!")
+driver.find_element_by_xpath("//textarea").send_keys("Mazal Tov!")
 rcv_name[4].click()
 # Upload a picture
 # pip install Pillow

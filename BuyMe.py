@@ -1,12 +1,6 @@
 # ***** BuyMe sanity text *****
 
-# Pre-Requisites:
-    # pip install Pillow
-    # pip install pynput
-    # chromedriver.exe should be located in c:\\temp
-
 import time
-from pynput.keyboard import Key, Controller
 from PIL import Image, ImageDraw
 from selenium import webdriver
 
@@ -82,9 +76,7 @@ d.text((30, 20), "Mazal Tov", fill=(255, 255, 0))
 img.save('c:/temp/mazaltov.jpg')
 # pip install pynput - for uploading the picture from the local drive using the the keyboard
 time.sleep(3)
-keyboard = Controller()
-keyboard.type("c:\\temp\\mazaltov.jpg")
-keyboard.press(Key.enter)
+driver.find_element_by_id("ember1277").send_keys("c:\\temp\\mazaltov.jpg")
 # pick the event - birthday
 time.sleep(3)
 events = driver.find_elements_by_class_name("chosen-container-single-nosearch")
